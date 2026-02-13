@@ -1,0 +1,18 @@
+/* Custom additions to Tailwind */
+html {
+    scroll-behavior: smooth;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form custom styling focus states */
+input:focus, select:focus {
+    transform: translateY(-1px);
+}
